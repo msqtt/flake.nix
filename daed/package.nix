@@ -19,11 +19,11 @@ let
       repo = "daed";
       fetchSubmodules = true;
       rev = "740cf4298d044720afd7647b69f5e17ee7d89f87";
-      hash = "sha256-t6rPnOjzCM2azfAc7u+KL/Yfw5lNo/m2GcFEGBnZvZE=";
+      hash = "sha256-fck3k0KGSOAmNikrL1C8Bs44pUJJuDtT6UB/aYyCeEg=";
     };
     pnpmDeps = pnpm.fetchDeps {
       inherit (finalAttrs) version src pname;
-      hash = "sha256-H0VYhK4myqZ5xqwJRJSF2okWN2fUsJUx+RU5fipbM5I=";
+      hash = "sha256-pNP/Ut5vRE+tqBYNHEkulCIeXnowHAIZKJe73cA0BB0=";
     };
     nativeBuildInputs = [
       nodejs
