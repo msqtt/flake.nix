@@ -12,13 +12,13 @@ let
   dist = stdenv.mkDerivation (finalAttrs: {
     name = "daed-dist";
     pname = "daed-dist";
-    version = "0.6.0-unstable-2024-06-16";
+    version = "v0.7.0rc1.1";
 
     src = fetchFromGitHub {
       owner = "daeuniverse";
       repo = "daed";
       fetchSubmodules = true;
-      rev = "32d1af726298ca033209a1a7b16e6b24f8792de3";
+      rev = "740cf4298d044720afd7647b69f5e17ee7d89f87";
       hash = "sha256-t6rPnOjzCM2azfAc7u+KL/Yfw5lNo/m2GcFEGBnZvZE=";
     };
     pnpmDeps = pnpm.fetchDeps {
@@ -45,7 +45,7 @@ let
 
   dae-ebpf = buildGoModule rec {
     pname = "dae";
-    version = "dae-ebpf-0.6.0-unstable-2024-06-16";
+    version = "dae-ebpf-v0.7.0rc1.1";
 
     src = fetchFromGitHub {
       owner = "daeuniverse";
@@ -83,7 +83,7 @@ let
 in
 buildGoModule rec {
   name = "daed";
-  version = "0.6.0-unstable-2024-06-16";
+  version = "v0.7.0rc1.1";
 
   src = fetchFromGitHub {
     owner = "daeuniverse";
